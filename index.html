@@ -6,6 +6,14 @@
     <title>Document</title>
 </head>
 <style>
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color:rgb(206, 213, 220);
+    }
     .cal{
         padding: 10px;
         display: flex;
@@ -13,7 +21,7 @@
         width: 320px;
         height: 550px;
         background-color:rgb(206, 213, 220);
-        margin: 0 auto;
+        
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
         border: 1px solidrgba(28, 23, 23, 0.77);
@@ -123,8 +131,9 @@
         <input type="button" class="button" value="0" onclick="display.value += '0'">
         <input type="button" class="button" value="." onclick="display.value += '.'">
         <input type="button" class="res" id="result" value="=" onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">  
-    </div>
-</div><br>
-<i style="margin-left:55%">Created By Dhiraj</i>
+    </div><br><br>
+    <i style="margin-left:60%">Created By Dhiraj</i>
+</div>
+
 </body>
 </html>

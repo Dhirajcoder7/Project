@@ -12,7 +12,7 @@
         flex-direction: column;
         width: 320px;
         height: 550px;
-        background-color:rgb(206, 213, 220);
+        background-color:rgb(40, 66, 93);
         margin: 0 auto;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
         border-radius: 10px;
@@ -21,12 +21,14 @@
    
     input[type="text"]{
         font-size: 40px;
-        background-color:rgba(129, 123, 123, 0.54);
+        background-color:rgba(201, 197, 197, 0.98);
         width: 97%;
         height: 60px;
         border-radius: 10px;
         color:black;
+        /* -webkit-text-stroke:0.3px white; */
         font-weight:bold;
+        margin-top: 5px;
         margin-bottom:10px;
     }
     .dii{
@@ -39,15 +41,14 @@
         margin-top: 20px;
         width: 55px;
         height: 55px;
-        background-color:rgba(22, 81, 134, 0.54);
+        background-color:rgba(71, 141, 203, 0.9);
         border-radius: 20%;
         color:black;
-        border: 1px solid rgba(6, 6, 6, 0.3);;
-        font-size: 20px;
+        border: 1px solid rgba(227, 211, 211, 0.3);;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     }
     .button:active {
-        background-color:rgba(189, 182, 182, 0.5);
+        background-color:rgba(57, 144, 175, 0.5);
         box-shadow: 0 0 5px rgba(251, 248, 248, 0.5);
     }
     .AC,.DEL{
@@ -104,37 +105,37 @@
 <body><br><br>
     <div class="cal">
     <div class="display">
-        <input type="text" name="display" id="display" readonly>
+        <input type="text"  id="display" readonly>
     </div>
     <div class="dii">
         <input type="button" class="AC" value="AC" onclick="display.value = ''">
         <input type="button" class="DEL" value="DEL" onclick="display.value = display.value.toString().slice(0, -1)">
-        <input type="button" class="opr" value="%" onclick="display.value += '%'">
-        <input type="button" class="opr" value="/" onclick="display.value += '/'">  
+        <input type="button"style="font-size:25px;font-weight:bold;" class="opr" value="%" onclick="display.value += '%'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="opr" value="/" onclick="display.value += '/'">  
     </div>
     <div class="dii">
-        <input type="button" class="button" value="7" onclick="display.value += '7'">
-        <input type="button" class="button" value="8" onclick="display.value += '8'">
-        <input type="button" class="button" value="9" onclick="display.value += '9'">
-        <input type="button" class="opr" value="x" onclick="display.value += '*'">  
+        <input type="button" style="font-size:25px;font-weight:bold;" class="button" value="7" onclick="display.value += '7'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="8" onclick="display.value += '8'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="9" onclick="display.value += '9'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="opr" value="x" onclick="display.value += '*'">  
     </div>
     <div class="dii">
-        <input type="button" class="button" value="4" onclick="display.value += '4'">
-        <input type="button" class="button" value="5" onclick="display.value += '5'">
-        <input type="button" class="button" value="6" onclick="display.value += '6'">
-        <input type="button" class="opr" value="-" onclick="display.value += '-'">  
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="4" onclick="display.value += '4'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="5" onclick="display.value += '5'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="6" onclick="display.value += '6'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="opr" value="-" onclick="display.value += '-'">  
     </div>
     <div class="dii">
-        <input type="button" class="button" value="1" onclick="display.value += '1'">
-        <input type="button" class="button" value="2" onclick="display.value += '2'">
-        <input type="button" class="button" value="3" onclick="display.value += '3'">
-        <input type="button" class="opr" value="+" onclick="display.value += '+'">  
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="1" onclick="display.value += '1'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="2" onclick="display.value += '2'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="3" onclick="display.value += '3'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="opr" value="+" onclick="display.value += '+'">  
     </div>
     <div class="dii">
-        <input type="button" class="button" value="00" onclick="display.value += '00'">
-        <input type="button" class="button" value="0" onclick="display.value += '0'">
-        <input type="button" class="button" value="." onclick="display.value += '.'">
-        <input type="button" class="res" id="result" value="=" onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">  
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="00" onclick="display.value += '00'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="0" onclick="display.value += '0'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="button" value="." onclick="display.value += '.'">
+        <input type="button"style="font-size:25px;font-weight:bold;" class="res" id="result" value="=" onclick="document.getElementById('display').value = eval(document.getElementById('display').value)">  
     </div>
 </div><br>
 <i style="margin-left:54%">Created By Dhiraj</i>
